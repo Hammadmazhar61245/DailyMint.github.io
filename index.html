@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Study Hacks to Boost Your Learning | Wardiere Inc.</title>
+    <meta name="description" content="Discover 5 powerful study hacks to enhance your learning efficiency and academic performance. Science-backed techniques from Wardiere Inc.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3a0ca3;
+            --accent-color: #f72585;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --gray-color: #6c757d;
+            --light-gray: #e9ecef;
+            --border-radius: 12px;
+            --box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .logo i {
+            color: var(--accent-color);
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .header-image {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid white;
+            box-shadow: var(--box-shadow);
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--primary-color);
+        }
+
+        /* Main Content */
+        .main-title {
+            text-align: center;
+            margin: 3rem 0 2rem;
+            color: var(--secondary-color);
+            font-size: 2.8rem;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .main-title:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background-color: var(--accent-color);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            font-size: 1.2rem;
+            color: var(--gray-color);
+            padding: 0 20px;
+        }
+
+        /* Study Hacks Grid */
+        .hacks-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .hack-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .hack-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .hack-number {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: var(--accent-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            z-index: 2;
+        }
+
+        .hack-image {
+            height: 200px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hack-content {
+            padding: 1.5rem;
+        }
+
+        .hack-title {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .hack-description {
+            color: var(--gray-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .hack-tip {
+            background-color: var(--light-gray);
+            padding: 1rem;
+            border-radius: 8px;
+            font-style: italic;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        /* Interactive Section */
+        .interactive-section {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            box-shadow: var(--box-shadow);
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+            font-size: 2.2rem;
+        }
+
+        .quiz-container {
+            margin-bottom: 2.5rem;
+        }
+
+        .quiz-question {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-color);
+        }
+
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .quiz-option {
+            padding: 1rem;
+            border: 2px solid var(--light-gray);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .quiz-option:hover {
+            background-color: var(--light-gray);
+        }
+
+        .quiz-option.selected {
+            background-color: rgba(67, 97, 238, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        .quiz-result {
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            display: none;
+        }
+
+        .quiz-result.correct {
+            background-color: rgba(40, 167, 69, 0.1);
+            color: #28a745;
+            display: block;
+        }
+
+        .quiz-result.incorrect {
+            background-color: rgba(220, 53, 69, 0.1);
+            color: #dc3545;
+            display: block;
+        }
+
+        .timer-container {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .timer {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .timer-buttons button {
+            padding: 0.8rem 1.5rem;
+            margin: 0 0.5rem;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .timer-buttons button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* Pinterest Section */
+        .pinterest-section {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .pinterest-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #bd081c;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            box-shadow: var(--box-shadow);
+        }
+
+        .pinterest-btn:hover {
+            background-color: #9c0718;
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.3rem;
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            margin-top: 2rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        .pinterest-username {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.2rem;
+            }
+            
+            .hacks-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .interactive-section {
+                padding: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .header-image {
+                width: 120px;
+                height: 120px;
+                font-size: 3rem;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Wardiere Inc.</span>
+                </div>
+                <div class="header-image">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h1>5 Study Hacks to Boost Your Learning!</h1>
+                <p class="tagline">Science-backed techniques to enhance your learning efficiency and academic performance</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h2 class="main-title">Study Smarter, Not Harder</h2>
+        
+        <p class="intro">
+            Are you tired of spending hours studying with little to show for it? Discover these 5 powerful study hacks 
+            backed by cognitive science that will revolutionize your learning process and help you achieve better results in less time.
+        </p>
+        
+        <!-- Study Hacks Grid -->
+        <div class="hacks-container">
+            <!-- Hack 1 -->
+            <div class="hack-card">
+                <div class="hack-number">1</div>
+                <div class="hack-image" style="background-image: url('https://images.unsplash.com/photo-1456513080510-34499c4359ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="hack-content">
+                    <h3 class="hack-title">The Pomodoro Technique</h3>
+                    <p class="hack-description">
+                        Break your study time into 25-minute focused intervals followed by 5-minute breaks. After four intervals, take a longer 15-30 minute break.
+                    </p>
+                    <div class="hack-tip">
+                        <strong>Pro Tip:</strong> Use a timer to enforce the intervals and avoid distractions during the focused periods.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hack 2 -->
+            <div class="hack-card">
+                <div class="hack-number">2</div>
+                <div class="hack-image" style="background-image: url('https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="hack-content">
+                    <h3 class="hack-title">Active Recall</h3>
+                    <p class="hack-description">
+                        Instead of passively rereading notes, actively test yourself on the material. Use flashcards, practice questions, or teach the concept to someone else.
+                    </p>
+                    <div class="hack-tip">
+                        <strong>Pro Tip:</strong> Create questions for yourself as you study, then answer them later without looking at your notes.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hack 3 -->
+            <div class="hack-card">
+                <div class="hack-number">3</div>
+                <div class="hack-image" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="hack-content">
+                    <h3 class="hack-title">Spaced Repetition</h3>
+                    <p class="hack-description">
+                        Review information at increasing intervals over time. This method strengthens long-term memory by taking advantage of the psychological spacing effect.
+                    </p>
+                    <div class="hack-tip">
+                        <strong>Pro Tip:</strong> Use apps like Anki or Quizlet that implement spaced repetition algorithms to optimize your review schedule.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hack 4 -->
+            <div class="hack-card">
+                <div class="hack-number">4</div>
+                <div class="hack-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="hack-content">
+                    <h3 class="hack-title">Interleaving Practice</h3>
+                    <p class="hack-description">
+                        Instead of studying one topic at a time (blocking), mix different subjects or types of problems during a single study session.
+                    </p>
+                    <div class="hack-tip">
+                        <strong>Pro Tip:</strong> When practicing math problems, mix algebra, geometry, and calculus questions rather than doing all of one type.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hack 5 -->
+            <div class="hack-card">
+                <div class="hack-number">5</div>
+                <div class="hack-image" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="hack-content">
+                    <h3 class="hack-title">The Feynman Technique</h3>
+                    <p class="hack-description">
+                        Explain a concept in simple terms as if teaching it to a child. Identify gaps in your explanation, then review and simplify further.
+                    </p>
+                    <div class="hack-tip">
+                        <strong>Pro Tip:</strong> Record yourself explaining a concept, then listen back to identify areas where your explanation was unclear.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Interactive Section -->
+        <div class="interactive-section">
+            <h2 class="section-title">Test Your Study Knowledge</h2>
+            
+            <div class="quiz-container">
+                <p class="quiz-question">Which study technique involves explaining concepts in simple terms as if teaching to a child?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-correct="false">The Pomodoro Technique</div>
+                    <div class="quiz-option" data-correct="true">The Feynman Technique</div>
+                    <div class="quiz-option" data-correct="false">Spaced Repetition</div>
+                    <div class="quiz-option" data-correct="false">Active Recall</div>
+                </div>
+                <div class="quiz-result"></div>
+            </div>
+            
+            <div class="timer-container">
+                <h3>Study Timer</h3>
+                <p>Use this Pomodoro timer to practice Hack #1:</p>
+                <div class="timer" id="timer-display">25:00</div>
+                <div class="timer-buttons">
+                    <button id="start-timer">Start Study Session</button>
+                    <button id="pause-timer">Pause</button>
+                    <button id="reset-timer">Reset</button>
+                </div>
+                <p id="timer-status">Ready to start a focused 25-minute study session!</p>
+            </div>
+        </div>
+        
+        <!-- Pinterest Section -->
+        <div class="pinterest-section">
+            <h2 class="section-title">Pin This to Pinterest!</h2>
+            <p>Share these study hacks with others and save for later reference.</p>
+            <a href="https://www.pinterest.com/pin/create/button/" class="pinterest-btn" target="_blank">
+                <i class="fab fa-pinterest"></i>
+                Pin This Article
+            </a>
+            <p style="margin-top: 1.5rem;">Follow us on Pinterest: <span class="pinterest-username">@reallygreatsite</span></p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Wardiere Inc.</span>
+                </div>
+                <p>Empowering learners with science-backed study techniques since 2023</p>
+                
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                </div>
+                
+                <p class="copyright">© 2023 Wardiere Inc. All rights reserved. | Study smarter, achieve more.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Quiz functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const quizOptions = document.querySelectorAll('.quiz-option');
+            const quizResult = document.querySelector('.quiz-result');
+            
+            quizOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    // Remove selected class from all options
+                    quizOptions.forEach(opt => opt.classList.remove('selected'));
+                    
+                    // Add selected class to clicked option
+                    this.classList.add('selected');
+                    
+                    // Check if answer is correct
+                    const isCorrect = this.getAttribute('data-correct') === 'true';
+                    
+                    // Display result
+                    if (isCorrect) {
+                        quizResult.textContent = 'Correct! The Feynman Technique involves explaining concepts in simple terms.';
+                        quizResult.className = 'quiz-result correct';
+                    } else {
+                        quizResult.textContent = 'Not quite. The correct answer is The Feynman Technique.';
+                        quizResult.className = 'quiz-result incorrect';
+                    }
+                });
+            });
+            
+            // Timer functionality
+            const timerDisplay = document.getElementById('timer-display');
+            const startBtn = document.getElementById('start-timer');
+            const pauseBtn = document.getElementById('pause-timer');
+            const resetBtn = document.getElementById('reset-timer');
+            const timerStatus = document.getElementById('timer-status');
+            
+            let timeLeft = 25 * 60; // 25 minutes in seconds
+            let timerInterval = null;
+            let isRunning = false;
+            let isBreak = false;
+            
+            function updateDisplay() {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+            
+            function startTimer() {
+                if (isRunning) return;
+                
+                isRunning = true;
+                startBtn.disabled = true;
+                pauseBtn.disabled = false;
+                
+                if (isBreak) {
+                    timerStatus.textContent = "On a break - relax and recharge!";
+                } else {
+                    timerStatus.textContent = "Focus! Study session in progress...";
+                }
+                
+                timerInterval = setInterval(() => {
+                    timeLeft--;
+                    updateDisplay();
+                    
+                    if (timeLeft === 0) {
+                        clearInterval(timerInterval);
+                        isRunning = false;
+                        startBtn.disabled = false;
+                        pauseBtn.disabled = true;
+                        
+                        // Switch between study and break
+                        if (isBreak) {
+                            // Break ended, start study session
+                            timeLeft = 25 * 60;
+                            timerStatus.textContent = "Break over! Ready to start a focused 25-minute study session!";
+                            isBreak = false;
+                            // Play a sound or show notification in a real implementation
+                            alert("Break time is over! Time to start your next study session.");
+                        } else {
+                            // Study session ended, start break
+                            timeLeft = 5 * 60;
+                            timerStatus.textContent = "Great job! Take a 5-minute break.";
+                            isBreak = true;
+                            // Play a sound or show notification in a real implementation
+                            alert("Study session complete! Take a 5-minute break.");
+                        }
+                        
+                        updateDisplay();
+                    }
+                }, 1000);
+            }
+            
+            function pauseTimer() {
+                if (!isRunning) return;
+                
+                clearInterval(timerInterval);
+                isRunning = false;
+                startBtn.disabled = false;
+                pauseBtn.disabled = true;
+                timerStatus.textContent = "Timer paused. Click 'Start Study Session' to resume.";
+            }
+            
+            function resetTimer() {
+                clearInterval(timerInterval);
+                isRunning = false;
+                isBreak = false;
+                timeLeft = 25 * 60;
+                updateDisplay();
+                startBtn.disabled = false;
+                pauseBtn.disabled = false;
+                timerStatus.textContent = "Ready to start a focused 25-minute study session!";
+            }
+            
+            startBtn.addEventListener('click', startTimer);
+            pauseBtn.addEventListener('click', pauseTimer);
+            resetBtn.addEventListener('click', resetTimer);
+            
+            // Initialize timer display
+            updateDisplay();
+            
+            // Add hover effect to hack cards
+            const hackCards = document.querySelectorAll('.hack-card');
+            hackCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // Add animation on scroll
+            function animateOnScroll() {
+                const elements = document.querySelectorAll('.hack-card, .interactive-section, .pinterest-section');
+                
+                elements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            }
+            
+            // Set initial state for animation
+            const animatedElements = document.querySelectorAll('.hack-card, .interactive-section, .pinterest-section');
+            animatedElements.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+            
+            window.addEventListener('scroll', animateOnScroll);
+            // Initial check for elements in view
+            animateOnScroll();
+        });
+    </script>
+</body>
+</html>
